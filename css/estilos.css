@@ -1,5 +1,6 @@
 :root {
   --vermelho-geral: #AD0931;
+  --vermelho-geral-hover: #92082a;
   --laranja-geral: #E1643E;
   /* --bottom-menu-button: linear-gradient(to right, var(--laranja-geral), var(--vermelho-geral)); */
   /* --navbar-top-menu: linear-gradient(to right, var(--vermelho-geral), var(--laranja-geral), var(--vermelho-geral)); */
@@ -68,6 +69,12 @@ body {
   color: #e2e2e2;
 }
 
+.catalogo-filtros-button:hover {
+  color: white !important; 
+  background-color: var(--vermelho-geral-hover) !important;
+  transition: 0.7s;
+}
+
 
 .card {
   border: none;
@@ -84,5 +91,7 @@ body {
   height: 150px; 
   object-fit: scale-down;
 }
+
+
 
 
