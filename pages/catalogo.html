@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hola Mundo</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/estilos.css" />
+  <link rel="stylesheet" href="../css/gallery-style.css" />
+  <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- 768 x 1024 ipad 2 air -->
+
+  <!-- HEADER -->
+
+  <!-- NAV SUPERIOR -->
+  <section class="container-fluid row navbar-top-menu g-0">
+    <div class="col">
+      <a class="btn btn-lg h-100 text-white" href="../index.html">
+        <i class="bi bi-chevron-left"></i>
+        Volver
+      </a>
+    </div>
+  </section>
+  <!-- /NAV SUPERIOR -->
+
+  <!-- BARRA DE BUSCA -->
+  <section class="container-fluid row g-0 catalogo-menu-barra-busca justify-content-between align-items-center">
+    <div class="col-12 col-sm-6 text-sm-start text-center catalogo-barra-busca">
+      <a class="btn btn-lg" href="#">
+        <i class="bi bi-images catalogo-icon"></i>
+        Catálogo de Produtos
+      </a>
+    </div>
+    <div class="col-10 offset-1 col-sm-5 text-end text-sm-center pe-2">
+      <div class="input-group flex-nowrap catalogo-barra-busca">
+        <input type="text" class="form-control" placeholder="Buscar" aria-label="Username"
+          aria-describedby="addon-wrapping" />
+        <span class="input-group-text" id="addon-wrapping"><i class="bi bi-search"></i></span>
+      </div>
+    </div>
+  </section>
+  <!-- /BARRA DE BUSCA -->
+
+  <!-- FILTROS -->
+  <section class="mt-4 container-fluid row mx-auto">
+    <div class="col-sm-6 text-center">
+      <div class="dropdown">
+        <button class="btn dropdown-toggle w-100 catalogo-filtros-button mb-2" type="button" id="dropdownMenuButton1"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          <strong>Segmentos</strong>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Setor Atividade</a></li>
+          <li><a class="dropdown-item" href="#">Marca</a></li>
+          <li><a class="dropdown-item" href="#">Variedade</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-sm-6 text-center">
+      <div class="dropdown">
+        <button class="btn btn-danger dropdown-toggle w-100 catalogo-filtros-button" type="button"
+          id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+          <strong>---</strong>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+          <li><a class="dropdown-item" href="#">Item 1</a></li>
+          <li><a class="dropdown-item" href="#">Item 2</a></li>
+          <li><a class="dropdown-item" href="#">Item 3</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- /FILTROS -->
+
+
+  <!-- /HEADER -->
+  
+    <main class="container-fluid mt-5 mb-3">
+      <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 row-cols-xl-6 row-cols-xxl-8  g-3">
+        
+        <div class="col px-2">
+          <div class="card">
+            <div class="d-flex justify-content-end">
+              <h6 class="vermelho-geral">R$8,99</h6>
+            </div>              
+              <h6 >Fideos<br>Matarazzo 500gr</h6>
+              <div class="d-flex flex-row justify-content-center">
+                <img src="../assets/images/fideos.png" class="card-img-top" alt="Fideos">
+              </div>
+              <hr>
+              <div class="mt-1 text-center"> 
+                <button class="btn btn-lg catalogo-filtros-button"><strong>+ Info</strong></button>
+              </div>
+          </div>
+        </div>
+        <div class="col px-2">
+          <div class="card">
+            <div class="d-flex justify-content-end">
+              <h6 class="vermelho-geral">R$5,89</h6>
+            </div>              
+              <h6 >Pure<br>Pure Cheff 500gr</h6>
+              <div class="d-flex flex-row justify-content-center">
+                <img src="../assets/images/pure.png" class="card-img-top" alt="Fideos">
+              </div>
+              <hr>
+              <div class="mt-1 text-center"> 
+                <button class="btn btn-lg catalogo-filtros-button"><strong>+ Info</strong></button>
+              </div>
+          </div>
+        </div>
+        <div class="col px-2">
+          <div class="card">
+            <div class="d-flex justify-content-end">
+              <h6 class="vermelho-geral">R$13,90</h6>
+            </div>              
+              <h6 >Ketchup<br>Heinz 500gr</h6>
+              <div class="d-flex flex-row justify-content-center">
+                <img src="../assets/images/heinz.png" class="card-img-top" alt="Fideos">
+              </div>
+              <hr>
+              <div class="mt-1 text-center"> 
+                <button class="btn btn-lg catalogo-filtros-button"><strong>+ Info</strong></button>
+              </div>
+          </div>
+        </div>
+        <div class="col px-2">
+          <div class="card">
+            <div class="d-flex justify-content-end">
+              <h6 class="vermelho-geral">R$8,99</h6>
+            </div>              
+              <h6 >Fideos<br>Matarazzo 500gr</h6>
+              <div class="d-flex flex-row justify-content-center">
+                <img src="../assets/images/fideos.png" class="card-img-top" alt="Fideos">
+              </div>
+              <hr>
+              <div class="mt-1 text-center"> 
+                <button class="btn btn-lg catalogo-filtros-button"><strong>+ Info</strong></button>
+              </div>
+          </div>
+        </div>
+        <div class="col px-2">
+          <div class="card">
+            <div class="d-flex justify-content-end">
+              <h6 class="vermelho-geral">R$5,89</h6>
+            </div>              
+              <h6 >Pure<br>Pure Cheff 500gr</h6>
+              <div class="d-flex flex-row justify-content-center">
+                <img src="../assets/images/pure.png" class="card-img-top" alt="Fideos">
+              </div>
+              <hr>
+              <div class="mt-1 text-center"> 
+                <button class="btn btn-lg catalogo-filtros-button"><strong>+ Info</strong></button>
+              </div>
+          </div>
+        </div>
+        <div class="col px-2">
+          <div class="card">
+            <div class="d-flex justify-content-end">
+              <h6 class="vermelho-geral">R$13,90</h6>
+            </div>              
+              <h6 >Ketchup<br>Heinz 500gr</h6>
+              <div class="d-flex flex-row justify-content-center">
+                <img src="../assets/images/heinz.png" class="card-img-top" alt="Fideos">
+              </div>
+              <hr>
+              <div class="mt-1 text-center"> 
+                <button class="btn btn-lg catalogo-filtros-button"><strong>+ Info</strong></button>
+              </div>
+          </div>
+        </div>
+        <div class="col px-2">
+          <div class="card">
+            <div class="d-flex justify-content-end">
+              <h6 class="vermelho-geral">R$8,99</h6>
+            </div>              
+              <h6 >Fideos<br>Matarazzo 500gr</h6>
+              <div class="d-flex flex-row justify-content-center">
+                <img src="../assets/images/fideos.png" class="card-img-top" alt="Fideos">
+              </div>
+              <hr>
+              <div class="mt-1 text-center"> 
+                <button class="btn btn-lg catalogo-filtros-button"><strong>+ Info</strong></button>
+              </div>
+          </div>
+        </div>
+        <div class="col px-2">
+          <div class="card">
+            <div class="d-flex justify-content-end">
+              <h6 class="vermelho-geral">R$5,89</h6>
+            </div>              
+              <h6 >Pure<br>Pure Cheff 500gr</h6>
+              <div class="d-flex flex-row justify-content-center">
+                <img src="../assets/images/pure.png" class="card-img-top" alt="Fideos">
+              </div>
+              <hr>
+              <div class="mt-1 text-center"> 
+                <button class="btn btn-lg catalogo-filtros-button"><strong>+ Info</strong></button>
+              </div>
+          </div>
+        </div>
+        <div class="col px-2">
+          <div class="card">
+            <div class="d-flex justify-content-end">
+              <h6 class="vermelho-geral">R$13,90</h6>
+            </div>              
+              <h6 >Ketchup<br>Heinz 500gr</h6>
+              <div class="d-flex flex-row justify-content-center">
+                <img src="../assets/images/heinz.png" class="card-img-top" alt="Fideos">
+              </div>
+              <hr>
+              <div class="mt-1 text-center"> 
+                <button class="btn btn-lg catalogo-filtros-button"><strong>+ Info</strong></button>
+              </div>
+          </div>
+        </div>
+     
+      </div>
+  </main>
+  <!-- MAIN -->
+
+  <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

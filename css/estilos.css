@@ -1,0 +1,88 @@
+:root {
+  --vermelho-geral: #AD0931;
+  --laranja-geral: #E1643E;
+  /* --bottom-menu-button: linear-gradient(to right, var(--laranja-geral), var(--vermelho-geral)); */
+  /* --navbar-top-menu: linear-gradient(to right, var(--vermelho-geral), var(--laranja-geral), var(--vermelho-geral)); */
+}
+
+/******************  UTILIDADES GERAIS  **************************/
+
+.vermelho-geral{
+  color: var(--vermelho-geral);
+}
+
+.laranja-geral{
+  color: var(--laranja-geral);
+}
+
+/******************  /UTILIDADES GERAIS  **************************/
+
+.bottom-menu {
+  /* background: var(--button-bottom-menu); */
+  min-height: 10%;
+}
+
+.bottom-menu-button{
+  background: linear-gradient(to right, var(--laranja-geral), var(--vermelho-geral));;
+  color: #EEEEEE;
+}
+
+.bottom-menu-button a {
+  background: linear-gradient(to right, var(--laranja-geral), var(--vermelho-geral));;
+  color: #EEEEEE;
+  /* font-weight: bold; */
+}
+
+.header-menu{
+    min-height: 30%;
+}
+
+.navbar-top-menu {
+  background: linear-gradient(to right, var(--vermelho-geral), var(--laranja-geral), var(--vermelho-geral));
+  /* min-height: 10%; */
+}
+
+.navbar-top-menu a {
+  color: #EEEEEE;
+}
+
+
+/******************  INICIO CATALOGO.HTML  **************************/
+
+body {
+  background-color: #eee
+}
+
+.catalogo-menu-barra-busca {
+  background: #EEEEEE;
+}
+
+.catalogo-icon {
+  color: var(--vermelho-geral);
+  font-size: 1.6rem;
+  padding-right: 10px;
+}
+
+.catalogo-filtros-button{
+  background-color: var(--vermelho-geral) !important;
+  color: #e2e2e2;
+}
+
+
+.card {
+  border: none;
+  border-radius: 10px;
+  height: 330px;
+  padding: 5px;
+  width: 175px;
+  
+}
+
+.card-img-top{
+  /* float: left; */
+  width: 130px;
+  height: 150px; 
+  object-fit: scale-down;
+}
+
+
