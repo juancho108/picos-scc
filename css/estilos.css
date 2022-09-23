@@ -109,3 +109,7 @@ body {
   display: inline !important; 
 }
 
+.custom-sticky-scroll {
+  max-height: 90vh;
+  overflow: auto;
+}
