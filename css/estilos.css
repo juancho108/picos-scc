@@ -51,6 +51,12 @@
   font-size: 1.8rem;
 }
 
+.button-modal{
+  color: white;
+  background-color: var(--vermelho-geral);
+  font-size: 2rem;
+}
+
 
 
 .header-menu{
