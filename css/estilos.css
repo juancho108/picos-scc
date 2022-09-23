@@ -134,6 +134,12 @@ body {
 
 /******************  INICIO ENTIDADES.HTML  **************************/
 
+.dropdown-index{
+  position: sticky;
+  z-index: 2000; 
+}
+
+
 .form-metros{
   width: 50% !important;
   display: inline !important; 
@@ -155,10 +161,17 @@ body {
 
 .tableFixHead {
   overflow-y: auto;
-  max-height: 67vh;/*700px;*/
+  max-height: 66vh;/*700px;*/
 }
 
 .tableFixHead thead th {
   position: sticky;
   top: 0;
+}
+
+table thead{
+  position: sticky;
+}
+table thead {
+  inset-block-start: 0; /* "top" */
 }
