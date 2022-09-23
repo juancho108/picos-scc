@@ -98,7 +98,12 @@ body {
 .catalogo-filtros-button{
   background-color: var(--vermelho-geral) !important;
   color: #e2e2e2;
-  
+}
+
+.dropdown-menu{
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
 }
 
 .catalogo-filtros-button:hover {
