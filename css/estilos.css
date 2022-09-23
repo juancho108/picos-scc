@@ -47,6 +47,16 @@
   color: #EEEEEE;
 }
 
+.identificador-icon {
+  color: var(--vermelho-geral);
+  font-size: 1.6rem;
+  padding-right: 10px;
+}
+
+.table-head{
+  background-color: var(--vermelho-geral);
+  color: #e2e2e2;
+}
 
 /******************  INICIO CATALOGO.HTML  **************************/
 
@@ -58,15 +68,12 @@ body {
   background: #EEEEEE;
 }
 
-.catalogo-icon {
-  color: var(--vermelho-geral);
-  font-size: 1.6rem;
-  padding-right: 10px;
-}
+
 
 .catalogo-filtros-button{
   background-color: var(--vermelho-geral) !important;
   color: #e2e2e2;
+  
 }
 
 .catalogo-filtros-button:hover {
@@ -94,4 +101,11 @@ body {
 
 
 
+
+/******************  INICIO ENTIDADES.HTML  **************************/
+
+.form-metros{
+  width: 50% !important;
+  display: inline !important; 
+}
 
