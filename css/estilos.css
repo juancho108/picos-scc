@@ -155,7 +155,7 @@ body {
 
 .tableFixHead {
   overflow-y: auto;
-  max-height: 700px;
+  max-height: 67vh;/*700px;*/
 }
 
 .tableFixHead thead th {
