@@ -153,4 +153,12 @@ body {
   border-color: var(--vermelho-geral-hover);
 }
 
+.tableFixHead {
+  overflow-y: auto;
+  max-height: 700px;
+}
 
+.tableFixHead thead th {
+  position: sticky;
+  top: 0;
+}
