@@ -143,3 +143,14 @@ body {
   max-height: 90vh;
   overflow: auto;
 }
+
+.form-switch{
+  font-size: 19px;
+}
+
+.form-check-input:checked {
+  background-color: var(--vermelho-geral);
+  border-color: var(--vermelho-geral-hover);
+}
+
+
