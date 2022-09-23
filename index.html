@@ -12,76 +12,91 @@
 </head>
 <body>
   <!-- 768 x 1024 ipad 2 air -->
+  <header class="sticky-top catalogo-menu-barra-busca pb-2">
+
     <!-- NAV SUPERIOR -->
-    <!-- <nav id="nav-superior" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img class="rounded" src="assets/images/logo-picos-scc.png" alt="Logo Picos SCC">
-
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+    <section class="container-fluid row navbar-top-menu g-0">
+      
+      <div class="col">
+        <button type="button" class="btn btn-configuration" data-bs-toggle="modal" data-bs-target="#configuration-modal">
+          <i class="bi bi-gear-fill"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbar">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" aria-current="page" href="#main">La Conferencia</a></li>
-            <li class="nav-item"><a class="nav-link" href="#speakers">Los Oradores</a></li>
-            <li class="nav-item"><a class="nav-link" href="#place-time">El lugar y la fecha</a></li>
-            <li class="nav-item"><a class="nav-link" href="#conviertete-en-orador">Conviértete en orador</a></li>
-            <li class="nav-item"><a class="nav-link text-platzi" href="#" data-bs-toggle="modal" data-bs-target="#modal-compra">Comprar Tickets</a></li>
-          </ul>
-        </div>
-    </div>
-  </nav> -->
-  <!-- /NAV SUPERIOR -->
-
-      <!-- NAV INFERIOR -->
-
-      <section class="container-fluid">
-        <div id="menu-inferior" class="row fixed-bottom bottom-menu g-0">
-          
-          <div class="col bottom-menu-button text-center">
-            <a class="btn btn-lg h-100 w-100 text-white" href="pages/home">
-              <i class="bi bi-house-door"><br></i> 
-              Home
-           </a>
-          </div>
-
-          <div class="col bottom-menu-button text-center">
-            <a class="btn btn-lg h-100 w-100 text-white" href="pages/catalogo.html">
-              <i class="bi bi-images"><br></i>
-              Catálogo
-           </a>
-          </div>
-
-          <div class="col-12 col-md-3 bottom-menu-button text-center">
-            <a class="btn btn-lg h-100 w-100 text-white" href="pages/entidades.html">
-              <i class="bi bi-shop"><br></i> 
-              Entidade
-           </a>
-          </div>
-
-          <div class="col bottom-menu-button text-center">
-            <a class="btn btn-lg h-100 w-100 text-white font-weight-bold" >
-              <i class="bi bi-list"></i>
-           </a>
-          </div>
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              Botón Dropdown
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#">Acción</a></li>
-              <li><a class="dropdown-item" href="#">Otra acción</a></li>
-              <li><a class="dropdown-item" href="#">Algo más aqui</a></li>
-            </ul>
-          </div>
+      </div>
    
+      <div class="col text-center justify-content-center text-white">
+          <strong>My Team <br>Picos</strong>
+      </div>
+      
+      <div class="col text-end">
+        <button type="button" class="btn btn-configuration" data-bs-toggle="modal" data-bs-target="#configuration-modal">
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
 
+   
+    </section>
+    <!-- /NAV SUPERIOR -->
+  </header>
+
+
+    <!-- NAV INFERIOR -->
+
+    <section class="container-fluid row fixed-bottom bottom-menu g-0 justify-content-center" id="menu-inferior">
+        
+        <div class="col-12 col-sm-6 col-md-3 bottom-menu-button d-flex align-items-center justify-content-center">
+          <a class="text-white" href="pages/home.html">
+            <i class="bi bi-house-door"><br></i> 
+            Home
+          </a>
         </div>
 
-      </section>
-    <!-- /NAV INFERIOR -->
+        <div class="col-12 col-sm-6 col-md-3  bottom-menu-button d-flex align-items-center justify-content-center">
+          <a class="text-white" href="pages/catalogo.html">
+            <i class="bi bi-images"><br></i>
+            Catálogo
+          </a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 bottom-menu-button d-flex align-items-center justify-content-center">
+          <a class="text-white" href="pages/entidades.html">
+            <i class="bi bi-shop"><br></i> 
+            Entidade
+          </a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 bottom-menu-button d-flex align-items-center justify-content-center">
+          <a class="text-white font-weight-bold " >
+            <i class="bi bi-list"></i>
+          </a>
+        </div>
+
+
+    </section>
+  <!-- /NAV INFERIOR -->
+
+
+    <!-- Vertically centered modal -->
+    <div class="modal fade" id="configuration-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Vertically centered modal -->
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
+
+

@@ -2,6 +2,7 @@
   --vermelho-geral: #AD0931;
   --vermelho-geral-hover: #92082a;
   --laranja-geral: #E1643E;
+  --laranja-obscuro-geral: #e24c1e;
   /* --bottom-menu-button: linear-gradient(to right, var(--laranja-geral), var(--vermelho-geral)); */
   /* --navbar-top-menu: linear-gradient(to right, var(--vermelho-geral), var(--laranja-geral), var(--vermelho-geral)); */
 }
@@ -24,15 +25,33 @@
 }
 
 .bottom-menu-button{
-  background: linear-gradient(to right, var(--laranja-geral), var(--vermelho-geral));;
+  background: linear-gradient(to right, var(--laranja-geral), var(--laranja-obscuro-geral));;
   color: #EEEEEE;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #eee;
+}
+
+.bottom-menu-button i{
+  font-size: 1.8rem;
 }
 
 .bottom-menu-button a {
-  background: linear-gradient(to right, var(--laranja-geral), var(--vermelho-geral));;
-  color: #EEEEEE;
-  /* font-weight: bold; */
+  font-size: 1.2rem;
+  text-decoration: none;
 }
+
+.bottom-menu-button i{
+  font-size: 1.8rem;
+}
+
+.btn-configuration{
+  height: 100%;
+  color: white;
+  font-size: 1.8rem;
+}
+
+
 
 .header-menu{
     min-height: 30%;

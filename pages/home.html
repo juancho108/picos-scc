@@ -1,59 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hola Mundo</title>
-  <link rel="stylesheet" href="../css/bootstrap.min.css">
-  <link rel="stylesheet" href="../css/estilos.css">
-  <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Picos SCC</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/estilos.css" />
+  <!-- <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css" /> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js" integrity="sha384-q9CRHqZndzlxGLOj+xrdLDJa9ittGte1NksRmgJKeCV9DrM7Kz868XYqsKWPpAmn" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
+
 </head>
+
 <body>
   <!-- 768 x 1024 ipad 2 air -->
-      <!-- NAV SUPERIOR -->
 
-          <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top bottom-menu">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html">
-                <i class="bi bi-images"><br></i>
-                Volver
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-start mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Enlace</a>
-                  </li>
-                  <li class="nav-item dropup">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Acción</a></li>
-                      <li><a class="dropdown-item" href="#">Otra acción</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">Deshabilitado</a>
-                  </li>
-                </ul>
-              </div>
+  <!-- HEADER -->
+  <header class="sticky-top">
+
+    <!-- NAV SUPERIOR -->
+    <section class="container-fluid row navbar-top-menu g-0">
+      <div class="col">
+        <a class="btn btn-lg h-100 text-white" href="../index.html">
+          <i class="bi bi-chevron-left"></i>
+          Volver
+        </a>
+      </div>
+    </section>
+    <!-- /NAV SUPERIOR -->
+
+    <!-- BARRA DE BUSCA -->
+    <section class="container-fluid row g-0 catalogo-menu-barra-busca justify-content-between align-items-center">
+      
+      <div class="col-12 col-sm-6 text-sm-start text-center catalogo-barra-busca">
+        <a class="btn btn-lg" href="#">
+          <i class="bi bi-shop identificador-icon"></i>
+          Entidades
+        </a>
+      </div>
+      <div class="col-10 offset-1 col-sm-5 text-end text-sm-center pe-2">
+        <div class="input-group flex-nowrap catalogo-barra-busca">
+          <input type="text" class="form-control" placeholder="Buscar" aria-label="Username"
+            aria-describedby="addon-wrapping" />
+          <span class="input-group-text" id="addon-wrapping"><i class="bi bi-search"></i></span>
+        </div>
+      </div>
+    </section>
+    <!-- /BARRA DE BUSCA -->
+
+    <!-- BARRA DE FILTROS -->
+    <section class="container-fluid row g-0 catalogo-menu-barra-busca justify-content-between align-items-center">
+    
+      <div class="col-12 col-sm-6 text-sm-start text-center catalogo-barra-busca">
+          <div class="form-check form-switch py-2 py-sm-0 ">
+              <label class="form-check-label" for="flexSwitchCheckChecked">Perto de mim</label>
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+              <input type="text" class="form-control form-metros" placeholder="Metros" aria-label="Busca" aria-describedby="addon-wrapping" />
             </div>
-          </nav>
-   
-
         </div>
 
-      </section>
-    <!-- /NAV SUPERIOR -->
-  <script src="js/bootstrap.bundle.min.js"></script>
+      <div class="col-12 col-sm-6 text-sm-start text-center catalogo-barra-busca ">
+        <div class="form-check form-switch py-2 py-sm-0 custom-switch">
+          <label class="form-check-label" for="flexSwitchCheckChecked">Por Planear</label>
+          <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+        </div>
+      </div>
+
+          
+        
+        
+        <!-- <div class="col-10 offset-1 col-sm-5 text-center text-sm-center pe-2 d-flex align-items-center">
+          <div class="input-group flex-nowrap catalogo-barra-busca">
+            <div class="form-check form-switch">
+              <label class="form-check-label" for="flexSwitchCheckChecked">Perto de mim</label>
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+          </div>
+          <input type="text" class="form-control" placeholder="Metros" aria-label="Busca"
+          aria-describedby="addon-wrapping" />
+        </div>
+      </div> -->
+      
+    </section>
+    <!-- /BARRA DE FILTROS -->
+
+    <!-- FILTRO TIPOLOGIA -->
+    <section class="mt-4 container-fluid row align-items-center">
+      
+      <div class="col-sm-2 text-center">
+        <h6>Tipologia: </h6>
+      </div>
+    
+      <div class="col-sm-10 text-center">
+        <div class="dropdown">
+          <button class="btn btn-outline dropdown-toggle w-100 catalogo-filtros-button mb-2 rounded-pill" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <strong>Todas</strong>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Bar</a></li>
+            <li><a class="dropdown-item" href="#">Restaurante</a></li>
+            <li><a class="dropdown-item" href="#">Quiosque</a></li>
+            <li><a class="dropdown-item" href="#">Supermercado</a></li>
+            <li><a class="dropdown-item" href="#">Mini-Mercado</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+    <!-- /FILTRO TIPOLOGIA -->
+
+    <hr class="mx-2 vermelho-geral">
+  </header>
+  <!-- /HEADER -->
+
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  <i class="bi bi-gear-fill"></i>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+    <!-- <main class="container-fluid mb-3">
+      <div class="">
+        <div class="table-responsive"> 
+            <table class="table">
+                <thead class="table-head sticky-top">
+                    <tr>
+                        <th>#</th>
+                        <th style="width:40%">Entidade</th>
+                        <th style="width:20%">Frequ. Visita</th>
+                        <th style="width:20%">Dia da Visita</th>
+                        <th style="width:20%">Localidade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>100 Verghonha</td>
+                        <td>A cada 4 semanas</td>
+                        <td>Quinta-Feira</td>
+                        <td>2605-041 Belas</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>A Francesinha</td>
+                        <td></td>
+                        <td>Segunda-Feira</td>
+                        <td>2735-074 Agualva-Cacém</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>A libra</td>
+                        <td>A cada 5 semanas</td>
+                        <td>Segunda-Feira</td>
+                        <td>2635-113 Rio de Mouro</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>A Piramide</td>
+                      <td>A cada 4 semanas</td>
+                      <td>Quinta-Feira</td>
+                      <td>2605-041 Belas</td>
+                  </tr>
+                  <tr>
+                      <td>5</td>
+                      <td>A Quinta</td>
+                      <td></td>
+                      <td>Segunda-Feira</td>
+                      <td>2735-074 Agualva-Cacém</td>
+                  </tr>
+                  <tr>
+                      <td>6</td>
+                      <td>Adega da Tala</td>
+                      <td>A cada 5 semanas</td>
+                      <td>Segunda-Feira</td>
+                      <td>2635-113 Rio de Mouro</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>Aclool Puro</td>
+                    <td>A cada 4 semanas</td>
+                    <td>Quinta-Feira</td>
+                    <td>2605-041 Belas</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Artivideo Café</td>
+                    <td></td>
+                    <td>Segunda-Feira</td>
+                    <td>2735-074 Agualva-Cacém</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Asteca</td>
+                    <td>A cada 5 semanas</td>
+                    <td>Segunda-Feira</td>
+                    <td>2635-113 Rio de Mouro</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Atelier do Petisco</td>
+                  <td></td>
+                  <td>Segunda-Feira</td>
+                  <td>2735-074 Agualva-Cacém</td>
+              </tr>
+              <tr>
+                  <td>11</td>
+                  <td>Bar- Unidos de Leceia</td>
+                  <td>A cada 5 semanas</td>
+                  <td>Segunda-Feira</td>
+                  <td>2635-113 Rio de Mouro</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>Bar Botafogo</td>
+                <td>A cada 4 semanas</td>
+                <td>Quinta-Feira</td>
+                <td>2605-041 Belas</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Bar The Gerard</td>
+                <td></td>
+                <td>Segunda-Feira</td>
+                <td>2735-074 Agualva-Cacém</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Bifanas Vendas Novas- Forum Sintra</td>
+                <td>A cada 5 semanas</td>
+                <td>Segunda-Feira</td>
+                <td>2635-113 Rio de Mouro</td>
+            </tr>
+                </tbody>
+            </table>
+        </div> 
+        <p class="mt-4"><strong>Note:</strong> 9 Clientes.</p>
+    </div>   
+     
+    </main> -->
+  <!-- MAIN -->
+
+  <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
