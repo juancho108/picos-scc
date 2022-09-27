@@ -175,3 +175,46 @@ table thead{
 table thead {
   inset-block-start: 0; /* "top" */
 }
+
+
+/******************  PLANO DE AÇÃO.HTML  **************************/
+
+.planoacao_checkbox {
+  height: 30px;
+  width: 30px;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid var(--laranja-geral) !important;
+  box-shadow: 1px 1px 4px;
+}
+
+.zona_execucao_button {
+  border: 2px solid var(--vermelho-geral);
+  color: black-100;
+}
+
+.zona_execucao_button:hover {
+  color: white !important; 
+  background-color: var(--vermelho-geral-hover) !important;
+  transition: 0.7s;
+}
+
+
+.tableFixHead2 {
+  overflow-y: auto;
+  max-height: 70vh;/*700px;*/
+}
+
+.tableFixHead2 thead th {
+  position: sticky;
+  top: 0;
+}
+
+.footer-container{
+  height: 100px;
+}

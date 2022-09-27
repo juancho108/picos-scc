@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Picos SCC</title>
+  <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../../css/estilos.css" />
+  <!-- <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css" /> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js"
+    integrity="sha384-q9CRHqZndzlxGLOj+xrdLDJa9ittGte1NksRmgJKeCV9DrM7Kz868XYqsKWPpAmn"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</head>
+
+<body class="overflow-hidden">
+  <!-- 768 x 1024 ipad 2 air -->
+
+  <!-- HEADER -->
+  <header class="sticky-top">
+    <!-- NAV SUPERIOR -->
+    <section class="container-fluid row navbar-top-menu g-0">
+      <div class="col">
+        <a class="btn btn-lg h-100 text-white" href="#" onClick="history.go(-1)">
+          <i class="bi bi-chevron-left"></i>
+          Voltar
+        </a>
+      </div>
+    </section>
+    <!-- /NAV SUPERIOR -->
+
+    <!-- BARRA DE BUSCA -->
+    <section class="container-fluid row g-0 catalogo-menu-barra-busca justify-content-between align-items-center">
+      <div class="col-12 ps-3">
+          <h2 class="vermelho-geral">100 Vergonha</h2>
+          <h5>Visibility</h5>
+      </div>
+      <div class="col-12 text-center px-3">
+        <div class="input-group flex-nowrap catalogo-barra-busca">
+          <span class="input-group-text" id="addon-wrapping"><i class="bi bi-search"></i></span>
+          <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar"
+            aria-describedby="addon-wrapping" />
+        </div>
+      </div>
+    </section>
+    <!-- /BARRA DE BUSCA -->
+
+    <hr class="mx-3 vermelho-geral" />
+  </header>
+  <!-- /HEADER -->
+
+  <main class="container-fluid mb-1">
+    <div class="">
+      <div class="table-responsive tableFixHead">
+        <table class="table">
+          <thead class="table-head">
+            <tr>
+              <th style="width: 30%" class="text-center">Material</th>
+              <th style="width: 10%" class="text-center">Presente</th>
+              <th style="width: 30%" class="text-center">Zona de Execução</th>
+              <th style="width: 20%" class="text-center">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- MATERIAIS -->
+            <tr>
+              <td>
+                <!-- MATERIAL -->
+                <div class="row align-items-center">
+                  <div class="col background-white py-3">
+                    <div class="clearfix">
+                      <img src="../../assets/images/not-image.jpg" class="rounded-circle avatar" alt="Imagem do produto" />
+                    </div>
+                  </div>
+                  <div class="col">
+                    <p class="d-inline">Heineken Cartaz TMwS</p>
+                  </div>
+                </div>
+              </td>
+              
+              <td class="align-middle">
+                <!-- PRESENTE -->
+                <div class="col w-100 text-center align-items-center">
+                  <div class="form-switch text-center align-middle ">
+                    <input class="form-check-input form-switch" type="checkbox" id="flexSwitchCheckChecked">
+                  </div>
+                </div>
+              </td>
+
+              <td class="align-middle">
+                <!-- ZONA EXECUÇÃO -->
+                <div class="col w-100 text-center">
+                  <div class="dropdown">
+                    <button class="btn btn-outline dropdown-toggle w-100 mb-2 rounded-pill zona_execucao_button" type="button" id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Zonas
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Bar</a></li>
+                      <li><a class="dropdown-item" href="#">Zona Entrada</a></li>
+                      <li><a class="dropdown-item" href="#">Zona de Mesas</a></li>
+                      <li><a class="dropdown-item" href="#">Não esta presente</a></li>
+                      <li><a class="dropdown-item" href="#">Bar & Back Bar</a></li>
+                      <li><a class="dropdown-item" href="#">Entrada</a></li>
+                      <li><a class="dropdown-item" href="#">Seating Area</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </td>
+
+              <td class="align-middle text-center">
+                <!-- STATUS -->
+                <input class="form-check-input planoacao_checkbox" type="checkbox" value="" id="flexCheckDefault" checked disabled>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <!-- MATERIAL -->
+                <div class="row align-items-center">
+                  <div class="col background-white py-3">
+                    <div class="clearfix">
+                      <img src="../../assets/images/balde-hnk.jpg" class="rounded-circle avatar" alt="Imagem do produto" />
+                    </div>
+                  </div>
+                  <div class="col">
+                    <p class="d-inline">Balde Heineken</p>
+                  </div>
+                </div>
+              </td>
+              
+              <td class="align-middle">
+                <!-- PRESENTE -->
+                <div class="col w-100 text-center align-items-center">
+                  <div class="form-switch text-center align-middle ">
+                    <input class="form-check-input form-switch" type="checkbox" id="flexSwitchCheckChecked">
+                  </div>
+                </div>
+              </td>
+
+              <td class="align-middle">
+                <!-- ZONA EXECUÇÃO -->
+                <div class="col w-100 text-center">
+                  <div class="dropdown">
+                    <button class="btn btn-outline dropdown-toggle w-100 mb-2 rounded-pill zona_execucao_button" type="button" id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Zonas
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Bar</a></li>
+                      <li><a class="dropdown-item" href="#">Zona Entrada</a></li>
+                      <li><a class="dropdown-item" href="#">Zona de Mesas</a></li>
+                      <li><a class="dropdown-item" href="#">Não esta presente</a></li>
+                      <li><a class="dropdown-item" href="#">Bar & Back Bar</a></li>
+                      <li><a class="dropdown-item" href="#">Entrada</a></li>
+                      <li><a class="dropdown-item" href="#">Seating Area</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </td>
+
+              <td class="align-middle text-center">
+                <!-- STATUS -->
+                <input class="form-check-input planoacao_checkbox" type="checkbox" value="" id="flexCheckDefault" checked disabled>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <!-- MATERIAL -->
+                <div class="row align-items-center">
+                  <div class="col background-white py-3">
+                    <div class="clearfix">
+                      <img src="../../assets/images/not-image.jpg" class="rounded-circle avatar" alt="Imagem do produto" />
+                    </div>
+                  </div>
+                  <div class="col">
+                    <p class="d-inline">Luminoso Interior Guinness</p>
+                  </div>
+                </div>
+              </td>
+              
+              <td class="align-middle">
+                <!-- PRESENTE -->
+                <div class="col w-100 text-center align-items-center">
+                  <div class="form-switch text-center align-middle ">
+                    <input class="form-check-input form-switch" type="checkbox" id="flexSwitchCheckChecked">
+                  </div>
+                </div>
+              </td>
+
+              <td class="align-middle">
+                <!-- ZONA EXECUÇÃO -->
+                <div class="col w-100 text-center">
+                  <div class="dropdown">
+                    <button class="btn btn-outline dropdown-toggle w-100 mb-2 rounded-pill zona_execucao_button" type="button" id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Zonas
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Bar</a></li>
+                      <li><a class="dropdown-item" href="#">Zona Entrada</a></li>
+                      <li><a class="dropdown-item" href="#">Zona de Mesas</a></li>
+                      <li><a class="dropdown-item" href="#">Não esta presente</a></li>
+                      <li><a class="dropdown-item" href="#">Bar & Back Bar</a></li>
+                      <li><a class="dropdown-item" href="#">Entrada</a></li>
+                      <li><a class="dropdown-item" href="#">Seating Area</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </td>
+
+              <td class="align-middle text-center">
+                <!-- STATUS -->
+                <input class="form-check-input planoacao_checkbox" type="checkbox" value="" id="flexCheckDefault" checked disabled>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <!-- MATERIAL -->
+                <div class="row align-items-center">
+                  <div class="col background-white py-3">
+                    <div class="clearfix">
+                      <img src="../../assets/images/lagunitas-cartaz.jpg" class="rounded-circle avatar" alt="Imagem do produto" />
+                    </div>
+                  </div>
+                  <div class="col">
+                    <p class="d-inline">Lagunitas Cartaz</p>
+                  </div>
+                </div>
+              </td>
+              
+              <td class="align-middle">
+                <!-- PRESENTE -->
+                <div class="col w-100 text-center align-items-center">
+                  <div class="form-switch text-center align-middle ">
+                    <input class="form-check-input form-switch" type="checkbox" id="flexSwitchCheckChecked">
+                  </div>
+                </div>
+              </td>
+
+              <td class="align-middle">
+                <!-- ZONA EXECUÇÃO -->
+                <div class="col w-100 text-center">
+                  <div class="dropdown">
+                    <button class="btn btn-outline dropdown-toggle w-100 mb-2 rounded-pill zona_execucao_button" type="button" id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Zonas
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Bar</a></li>
+                      <li><a class="dropdown-item" href="#">Zona Entrada</a></li>
+                      <li><a class="dropdown-item" href="#">Zona de Mesas</a></li>
+                      <li><a class="dropdown-item" href="#">Não esta presente</a></li>
+                      <li><a class="dropdown-item" href="#">Bar & Back Bar</a></li>
+                      <li><a class="dropdown-item" href="#">Entrada</a></li>
+                      <li><a class="dropdown-item" href="#">Seating Area</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </td>
+
+              <td class="align-middle text-center">
+                <!-- STATUS -->
+                <input class="form-check-input planoacao_checkbox" type="checkbox" value="" id="flexCheckDefault" checked disabled>
+              </td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+  <!-- MAIN -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container-fluid footer-container ">
+        <div class="row h-100 align-items-center">
+          <div class="col-12 col-sm-6 text-center">
+            <!-- <button type="button" class="btn btn-lg btn-outline-danger">Cancelar</button> -->
+            <button type="button" class="btn btn-lg btn-outline-danger w-100 rounded-pill">Cancelar</button>
+          </div>
+          <div class="col-12 col-sm-6 text-center">
+            <button type="button" class="btn btn-lg btn-danger w-100 rounded-pill">Aceptar</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /FOOTER -->
+
+  <script src="../../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
