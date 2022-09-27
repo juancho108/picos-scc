@@ -205,16 +205,3 @@ table thead {
 }
 
 
-.tableFixHead2 {
-  overflow-y: auto;
-  max-height: 70vh;/*700px;*/
-}
-
-.tableFixHead2 thead th {
-  position: sticky;
-  top: 0;
-}
-
-.footer-container{
-  height: 100px;
-}
